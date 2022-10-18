@@ -6,7 +6,7 @@ Class conectar {
         
         try {
             
-            $conexion = new PDO('mysql:host=localhost; dbname=id19645568_basics', 'id19645568_root', 'Vayroykyba12_');
+            $conexion = new PDO('mysql:host=localhost; dbname=BASICS', 'debian-sys-maint', 'ccgtUOuJ28ISMBOH');
             $conexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             $conexion->exec("SET CHARACTER SET UTF8");
             
