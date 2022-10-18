@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Lora&family=Open+Sans:wght@800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lora', serif;
+    margin: 0;
+    background-color: #141414;
+    color: white;
+}
+
+/*===============================  ESTILOS BASE   ===============================*/
+img {
+    display: block;
+    width: 500px;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+}
+
+.container--flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.column {
+    width: 100%;
+}
+
+/*===============================  ESTILOS HEADER   ===============================*/
+
+.main-header {
+    width: 100%;
+}
+
+.logo { 
+    font-size: 1.8em;
+    font-family: 'Klee One', cursive;
+    font-weight: 100;
+    padding: 10px;
+}
+
+/*===============================  ESTILOS MENU   ===============================*/
+
+.main-nav {
+    position: relative;
+    z-index: 2000;
+}
+
+.fa-bars {
+    display: block;
+    color: white;
+}
+
+.menu {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    background-color: #141414;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0;
+    overflow: hidden;
+    transition: height .3s linear;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu__link:hover {
+    background: #419496;
+    color: #1a1818;
+}
+
+.menu__link--select {
+    background: #419496;
+    color:  #1a1818;
+}
+
+.mostrar{
+    height: auto;
+}
+
+.fa-bars{
+    display: block;
+    color: white;
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/*===============================  ESTILOS BANNER   ===============================*/
+.banner {
+    margin-top: -40px;
+    position: relative;
+}
+
+.banner:before {
+    content: ''; /*pseudo elemento*/
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(1, 1, 1, 0.7);
+    z-index: 1000;
+    top: 0px;
+}
+
+.banner__img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.banner__content{
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/*===============================  ESTILOS PAGINA  ===============================*/
+
+.mas-vendidos  .column, .mas-recientes  .column, .mejor-calificados .column{
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.mas-vendidos__img, .mas-recientes__img, .mejor-calificados__img{
+    cursor: pointer;
+}
+
+.mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'Klee One', cursive;
+    cursor: pointer;
+}
+
+.group__title{
+    font-size: 1.3em;
+    padding-bottom: 15px;
+    color: #419496;
+    font-family: 'Klee One', cursive;
+    text-align:left;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 10px;
+}
+
+.mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+    font-size: 1.0em;
+}
+
+.mas-vendidos__price, .mas-recientes__price, .mejor-calificados__price{
+    font-size: 1.5em;
+    color: #50ab29;
+    font-weight: bold;
+}
+
+.mas-vendidos__calif, .mas-recientes__calif, .mejor-calificados__calif{
+    font-size: 1.2em;
+    padding-bottom:  10px;
+}
+
+.mas-vendidos__boton, .mas-recientes__boton, .mejor-calificado__boton{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    background: #50ab29;
+    color: black;
+    padding: 5px;
+    margin: 10px auto;
+    border: none;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+.container--flex{
+    z-index: -5000;
+}
+
+.btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    background: none;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/*===============================  ESTILOS FOOTER  ===============================*/
+
+.main-footer{
+    background: #419496;
+    color: black;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+.copy{
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.main-footer [class*= "fa-"]{
+    color: #2A2A2A;
+    text-decoration: none;
+    font-size: 1.4em;
+    padding: 5px;
+}
+
+.main-footer [class*= "fa-"]:before{
+      position: relative;
+      top: 3px;
+      right: 5px;
+}
+
+.column__title{
+    font-size: 1.8em;
+    margin: auto;
+}
+
+/*===============================  ESTILOS RESPONSIVE  ===============================*/
+@media (min-width: 768px) and (max-width: 1023px){
+    
+    .banner{
+        margin-top: -170px;
+        z-index: -1000;
+    }
+
+    .column--50{
+        width: 49%;
+    }
+
+    .main-nav{
+        background: none;
+    }
+
+    .column--50-25{
+        width: 49%; 
+        height: 500px;
+        background-color: #262525;
+        border-radius: 5px;
+    }
+
+    .mas-vendidos .column,.mas-recientes .column, .mejor-calificados .column {
+        border: 5px solid #1a1818;
+        background: #1a1818;
+        padding: 5px;
+    }
+
+    .mas-vendidos__img, .mas-recientes__img, .mejor-calificados__img{
+        width: 300px;
+        height: 200px;
+        margin: auto;
+
+    }
+
+    .column-33{
+        width: 49%;
+        text-align: center;
+    }
+
+    .column-332{
+        width: 49%;
+        text-align: center;
+    }
+
+    .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 0.8em;
+        height: 5em;
+    }
+    
+     .mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+        font-size: 1.2em;
+        height: 70px;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 767px){
+    .column--50-25{
+        width: 48%; 
+        background-color: #262525;
+         border-radius: 5px;
+    }
+
+    .mas-vendidos .column,.mas-recientes .column, .mejor-calificados .column {
+        border: 5px solid #1a1818;
+        background: #1a1818;
+        padding: 5px;
+    }
+
+    .mas-vendidos__img,.mas-recientes__img, .mejor-calificados__img{
+        height: 200px;
+        width: 280px;
+    }
+
+    .column-33{
+        width: 48%;
+        text-align: center;
+    }
+
+    .column-332{
+        width: 49%;
+        text-align: center;
+    }
+
+    .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 0.8em;
+        height: 5em;
+    }   
+    
+    .mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+        font-size: 1.2em;
+        height: 70px;
+    }
+}
+
+@media screen and  (min-width: 767px){
+    .column--50-25{
+        width: 48%; 
+        background-color: #262525;
+         border-radius: 5px;
+    }
+
+    .mas-vendidos .column,.mas-recientes .column, .mejor-calificados .column {
+        border: 5px solid #1a1818;
+        background: #1a1818;
+        padding: 5px;
+    }
+
+    .mas-vendidos__img,.mas-recientes__img, .mejor-calificados__img{
+        height: 200px;
+        width: 280px;
+    }
+
+    .column-33{
+        width: 48%;
+        text-align: center;
+    }
+
+    .column-332{
+        width: 49%;
+        text-align: center;
+    }
+
+    .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 0.8em;
+        height: 5em;
+    }   
+    
+    .mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+        font-size: 1.2em;
+        height: 70px;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+    .logo{
+        font-size: 2.0em;
+        padding: 5px;
+        z-index: 5000;    
+    }
+
+    .column-332{
+        width: 49%;
+        text-align: center;
+    }
+    
+    .column-33{
+        width: 49%;
+        text-align: center;
+    }
+
+    .main-nav{
+        top: 0;
+        background: none;
+        position: relative;
+    }
+
+    .banner__img{
+        margin-top: 44px;
+        z-index: -1000;
+    }
+
+    .banner__content{
+        font-size: 2.5em;
+    }
+
+    .fa-bars{
+        color: #141414;
+        border: 1px solid #141414;
+        cursor:auto;
+        position: relative;
+    }
+
+    .menu{
+         display: flex;
+         height: auto;
+         position: static;
+         width: auto;
+    }
+
+    .menu__link{
+        padding: 20px;
+    }
+
+    .mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+        font-size: 1.2em;
+        height: 70px;
+    }
+
+    .mas-vendidos__price, .mas-recientes__price, .mejor-calificados__price{
+        font-size: 1.8em;
+    }
+
+    .main-footer{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .column__txt{
+        text-align: center;
+    }
+
+    .column--50-25{
+        max-width: 24.5%;
+        height: auto;
+        background-color: #1a1818;
+        border-radius: 5px;
+    }
+
+    .column__title{
+        font-size: 2em;
+    }
+
+    .mas-vendidos__img,.mas-recientes__img, .mejor-calificados__img{
+        width: 220px;
+        height: 150px;
+        margin: auto;
+    }
+
+    .container--flex{
+        z-index: -2000;
+    }
+
+    .logo{
+        position: absolute;
+        left: 2%;
+        top: 1.0%;
+    }
+
+    .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 0.8em;
+        height: 5em;
+    }
+}
+
+@media  (min-width: 1400px) and (max-width: 1799px){
+    .container{
+        width: 1400px;
+    }
+
+    .banner__img{
+        margin-top: 44px;
+        z-index: -1000;
+    }
+
+    .mas-vendidos__img, .mas-recientes__img, .mejor-calificados__img{
+        width: 320px;
+        height: 200px;
+    }
+
+    .logo{left: 2%;}
+
+    .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 0.8em;
+        height: 4em;
+    }
+
+    .column-332{
+        width: 49%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 2397px) and (max-width: 2800px){
+
+    .mas-vendidos .column,.mas-recientes .column, .mejor-calificados .column {
+        border: 5px solid #1a1818;
+        background: #1a1818;
+        padding: 5px;
+        margin-right: 1px;
+        margin-left: 5px;
+        width: 50%;
+        height: auto;
+    }
+    
+    .mas-vendidos__boton, .mas-recientes__boton, .mejor-calificado__boton{
+        width: 180px;
+        height: 60px;
+        font-size: 1.2em;
+    }
+    
+      .mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+        font-size: 2.1em;
+        height: 90px;
+    }
+    
+    .mas-vendidos__img,.mas-recientes__img, .mejor-calificados__img{
+        height: 250px;
+        width: 500px;
+    }
+    
+     .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 1.3em;
+        height: 4em;
+    }
+    
+     .mas-vendidos__price, .mas-recientes__price, .mejor-calificados__price{
+        font-size: 2.3em;
+    }
+    
+    .mas-vendidos__calif, .mas-recientes__calif, .mejor-calificados__calif{
+    font-size: 2.2em;
+    padding-bottom:  10px;
+}
+    
+     .group__title{
+    font-size: 2.6em;
+   }
+
+}
+
+@media screen and (min-width: 1800px) and (max-width:  2396px){
+   
+    .group__title{
+    font-size: 2.3em;
+   }
+   
+   .mas-vendidos__calif, .mas-recientes__calif, .mejor-calificados__calif{
+    font-size: 1.7em;
+    padding-bottom:  10px;
+    }
+    
+    .mas-vendidos__boton, .mas-recientes__boton, .mejor-calificado__boton{
+        width: 180px;
+        height: 40px;
+        font-size: 1.0em;
+        margin-bottom: 10px;
+    }
+       
+      .mas-vendidos__title, .mas-recientes__title, .mejor-calificados__title{
+        font-size: 2.1em;
+        height: 90px;
+    }
+    
+    .mas-vendidos__img,.mas-recientes__img, .mejor-calificados__img{
+        height: 220px;
+        width: 370px;
+        margin-top: 10px;
+    }
+    
+     .mas-vendidos__descripcion, .mas-recientes__descripcion, .mejor-calificados__descripcion{
+        font-size: 1.3em;
+        height: 4em;
+    }
+    
+     .mas-vendidos__price, .mas-recientes__price, .mejor-calificados__price{
+        font-size: 2.3em;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 474px){
+    .mas-vendidos__img, .mas-recientes__img, .mejor-calificados__img{
+        margin: auto;
+        width: 300px;
+        height: 200px;
+    }
+    
+    .column--50-25{
+        background-color: #1a1818;
+        border-bottom: 50px;
+        border-radius: 5px;
+    }
+    
+    .fa-bars {
+    display: block;
+    color: white;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 767px){
+    .mas-vendidos__img, .mas-recientes__img, .mejor-calificados__img{
+        margin: auto;
+        width: 300px;
+        max-height: 200px;
+        margin-top: 10px;
+    }
+}

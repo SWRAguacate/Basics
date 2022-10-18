@@ -1,0 +1,24 @@
+
+usuario: uuid_usuario, matricula, nombre, correo, contraseña, tipo, cifrado
+
+carreras: uuid_carrera, siglas, nombre, imagen
+
+materias con grupo: uuid_materia, id_carrera, nombre, siglas, grupo
+
+alumno_materia: id_materia, id_alumno
+
+chats privados: uuid_chat_priv, id_emisor, id_receptor, mensaje, fecha, cifrado, imagen
+
+chat grupal: uuid_chat_grupal, id_emisor, id_grupo, mensaje, fecha, cifrado, imagen, es_img
+
+grupo: uuid_grupo, id_usurio1, id_usurio2, id_usurio3, id_usurio4, id_usurio5
+
+publicaciones_materia: uuid_publicacion, id_materia, contenido, id_emisor, nombre_emisor, img_emisor, cifrado, imagen, fecha
+
+chat de materia con grupo: uuid_chat_materia, id_materia, id_emisor, mensaje, cifrado
+
+tareas_materia: uuid_tarea, id_materia_grupo, id_emisor, titulo, instrucciones, archivo, fecha
+
+foro: uuid_foro, id_carrera, id_emisor, mensaje, cifrado, imagen, es_img
+
+tarea_alumno: uuid_progreso, id_alumno, id_tarea, fecha, finalizada

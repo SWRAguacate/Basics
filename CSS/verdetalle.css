@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Lora&family=Open+Sans:wght@800&display=swapfamily=Poppins:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container3{
+    overflow: hidden;
+    padding-top: 50px;
+    margin: 0 100px;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    border-color: white;
+    border-bottom: 50px;
+}
+
+th,td{
+    padding: 15px;
+    border-bottom: solid 1px #4BB6BB;
+}
+
+.fa-check-circle{
+    color: green;
+    font-size: 1.8em;
+}
+
+.fa-times-circle{
+    color: #E44D26;
+    font-size: 1.8em;
+}
+
+.detalle-title{
+    text-align: center;
+    font-size: 2.0em;
+    color: #4BB6BB;
+    margin-bottom: 40px;
+}
+
+.regresar{
+    color: #4BB6BB;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer{
+    margin-top: 70px;
+}
+
+
+@media (max-width: 1024px){
+    .profile-side{
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+
+    .profile-img img{
+        height: 200px;
+        width: 200px;
+        left: 50px;
+        top: 50px;
+    }
+
+    .curso-title{
+        font-size: 1.0rem;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        border-color: white;
+    }
+    
+    th,td{
+        padding: 10px;
+        border-bottom: solid 1px #4BB6BB;
+        font-size: 0.8em;
+    }
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 1.8em;
+    }
+    
+    .btn-edit{
+        background: #FFCF00;
+        border: none;
+        outline: none;
+        border: 2px;
+        font-size: 0.9em;
+        height: 20px;
+        width: 50px;
+    }
+    
+    .btn-delete{
+        background: #E44D26;
+        border: none;
+        outline: none;
+        border: 2px;
+        font-size: 0.9em;
+        height: 20px;
+        width: 50px;
+    }
+
+}
+
+@media (max-width: 577px){
+    .profile-side{
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+
+    .container3{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 30px;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        border-color: white;
+    }
+    
+    th,td{
+        padding: 10px;
+        border-bottom: solid 1px #4BB6BB;
+        font-size: 0.8em;
+    }
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 595px){
+    .profile-side{
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+
+    .container3{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 30px;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        border-color: white;
+    }
+    
+    th,td{
+        padding: 10px;
+        border-bottom: solid 1px #4BB6BB;
+        font-size: 0.8em;
+    }
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 604px){
+    .profile-side{
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+
+    .container3{
+        overflow: hidden;
+        padding-top: 10px;
+        margin: 0 4px;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        border-color: white;
+    }
+    
+    .detalle-title{
+        font-size: 1.5em;
+    }
+    
+    th,td{
+        padding: 10px;
+        border-bottom: solid 1px #4BB6BB;
+        font-size: 0.6em;
+    }
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 1.8em;
+    }
+}
+
+@media (max-width: 320px){
+.detalle-title {
+    font-size: 1.0em;
+}
+
+.regresar{
+    font-size: 1.0em;
+}
+}

@@ -1,0 +1,682 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Lora&family=Open+Sans:wght@800&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lora', serif;
+    margin: 0;
+    background-color: #141414;
+    color: white;
+}
+
+ a{
+    text-decoration: none;
+}
+
+/*===============================  ESTILOS PAGINA  ===============================*/
+.categoria__img{
+    margin: auto;
+    max-width: 315px;
+}
+
+.categorias{
+    font-size: 2.5em;
+    color: #419496;
+    font-family: 'Klee One', cursive;
+    text-align:center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.categoria__title{
+    font-size: 2.0em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #419496;
+    font-family: 'Klee One', cursive;
+    text-align:left;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.curso__title{
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    color: #61CF31;
+    font-family: 'Klee One', cursive;
+    text-align:center;
+    font-weight: bold;
+    margin: 20px;
+}
+
+.categoria__descripcion{
+    font-size: 0.9em;
+}
+
+.categoria__price{
+    font-size: 1.5em;
+    color: #419496;
+    font-weight: bold;
+}
+
+.categoria__calif{
+    font-size: 1.2em;
+    padding-bottom:  10px;
+}
+
+.categoria__boton{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 140px;
+    background: #419496;
+    color: black;
+    padding: 5px;
+    margin: 10px auto;
+    border: none;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+.btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 55px;
+    top: 0;
+    right: 0;
+    background: none;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.filtro-fecha, .filtro-categoria, .filtro-titulo-usuario, .title-filtrar{
+    padding-left: 5px;
+    color: #419496;
+}
+
+.title-filtrar{
+    font-size: 1.7em;
+    color: #61CF31;
+}
+
+.categorias-combo{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    background-color: #2A2A2A;
+    color: white;
+    font-family: 'Klee One', cursive;
+    border: none;
+}
+
+.buscar-input{
+    width: 300px;
+    height: 30px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: #2A2A2A;
+}
+
+.btn-filtrar{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1.0em;
+    background-color: #419496;
+    font-family: 'Klee One', cursive;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn-filtrar:hover{
+    background-color: #61CF31;
+}
+
+.check{
+    margin-bottom: 15px;
+    margin-left:15px;
+    
+}
+
+.paginacion {
+    margin:20px 0;
+}
+
+.paginacion ul {
+    list-style:none;
+    text-align: center;
+}
+
+.paginacion ul li {
+    display:inline-block;
+    margin-right:10px;
+}
+
+.paginacion ul li a {
+    display:block;
+    padding:10px 20px;
+    color:#050404   ;
+    background:#61CF31;
+    text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+    background:#316d17;
+    color: white;
+}
+
+.paginacion ul li .active {
+    background:#316d17;
+    font-weight:bold;
+    color: white;
+}
+
+/*===============================  ESTILOS RESPONSIVE  ===============================*/
+@media (min-width: 300px) and (max-width: 355px){
+   .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+    .filtro-check{
+         align-content: center;
+         margin-left: 32px;
+    }
+    
+    .filtro-check2{
+         text-align: center;
+         align-items: center;
+         margin-left: 5px;
+    }
+    
+    .fecha-inicial, .fecha-final{
+         text-align: center;
+         align-items: center;
+    }
+    
+    .categorias-combo, .buscar-input {
+         align-items: center;
+         width: 300px;
+         height: 30px;
+    }
+    
+    .btn-filtrar{
+        align-items: center;
+        margin-left: 4em;
+    }
+}
+
+@media (min-width: 356px) and (max-width: 374px){
+     .filtro-check{
+         margin-left: 8px;
+    }
+    
+     .categorias-combo, .buscar-input {
+         align-items: center;
+          width:95%;
+         height: 30px;
+    }
+    
+    .fecha-inicial, .fecha-final{
+        width:47%;
+    }
+    
+    .filtro-check2{
+         margin-left: 70px;
+    }
+    
+     .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+    .btn-filtrar{
+        align-items: center;
+        margin-left: 4em;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px){
+     .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+    .filtro-check{
+         margin-left: 12px;
+    }
+    
+    .filtro-check2{
+         margin-left: 74px;
+    }
+    
+    .fecha-inicial, .fecha-final{
+         width: 47%;
+    }
+    
+    .categorias-combo, .buscar-input {
+          width:95%;
+    }
+    
+    .btn-filtrar{
+        margin-left: 5.5em;
+    }
+}
+
+@media (min-width: 337px) and (max-width: 355px){
+     .filtro-check{
+         text-align: center;
+         align-items: center;
+         margin-left: 2px;
+    }
+    
+    .filtro-check2{
+         text-align: center;
+         align-items: center;
+         margin-left: 67px;
+    }
+    
+     .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 460px){
+    .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+  .filtro-check{
+         text-align: center;
+         align-items: center;
+         margin-left: 25px;
+    }
+    
+    .filtro-check2{
+         text-align: center;
+         align-items: center;
+         margin-left: 96px;
+    }
+    
+    .fecha-inicial, .fecha-final{
+         width: 47%;
+    }
+    
+    .categorias-combo, .buscar-input {
+         width:95%;
+    }
+    
+    .btn-filtrar{
+        margin-left: 7em;
+    }
+}
+
+@media (min-width: 461px) and (max-width: 767px){
+  .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+  .filtro-check{
+         text-align: center;
+         align-items: center;
+         margin-left: 38px;
+    }
+    
+    .filtro-check2{
+         text-align: center;
+         align-items: center;
+         margin-left: 100px;
+    }
+    
+    .fecha-inicial, .fecha-final{
+         width: 47%;
+    }
+    
+    .categorias-combo, .buscar-input {
+         width:95%;
+    }
+    
+    .btn-filtrar{
+        margin-left: 7em;
+    }
+}
+@media (min-width: 509px) and (max-width: 599px){
+     .filtro-check{
+         text-align: center;
+         align-items: center;
+         margin-left: 45px;
+    }
+    
+    .filtro-check2{
+         text-align: center;
+         align-items: center;
+         margin-left: 120px;
+    }
+    
+    .fecha-inicial, .fecha-final{
+         width: 47%;
+    }
+    
+    .categorias-combo, .buscar-input {
+         width:95%;
+         align-content: center;
+          align-items: center;
+    }
+    
+    .btn-filtrar{
+        margin-left: 10em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 766px){
+     .filtro-check, .filtro-check2{
+         margin-left: 22px;
+    }
+    
+   .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width: 99%;
+        margin-right: 20px;
+        font-size: 0.8em;
+    }
+    .fecha-inicial, .fecha-final{
+        width: 85%;
+        height: 30px;
+    }
+    
+    .btn-filtrar{
+        margin-left: 14em;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 864px){
+       .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 7%;
+    }
+    
+    .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .usuario-text{
+        margin-left: 36px;
+    }
+    
+     .fecha-inicial, .fecha-final{
+        width: 45%;
+    }
+    
+      .buscar-input{
+         width:185px;
+           margin-left: 4px;
+    }
+    
+    .categorias-combo, .buscar-input{
+         width: 125px;
+         margin-right: 10px;
+    }
+    
+     .usuario-text{
+        margin-left: 2px;
+    }
+    
+    .btn-filtrar{
+        margin-left: 40%;
+    }
+}
+
+@media   (min-width: 865px) and (max-width: 1023px) {
+      .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 8%;
+    }
+    
+   .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width: 90%;
+    }
+    
+    .usuario-text{
+        margin-left: 36px;
+    }
+    
+     .fecha-inicial, .fecha-final{
+        width: 140px;
+        height: 30px;
+    }
+    
+    .categorias-combo, .buscar-input{
+         width: 140px;
+         margin-right: 2px;
+    }
+    
+    .btn-filtrar{
+        margin-left: 40%;
+    }
+}
+
+@media  screen and (min-width: 1024px) {
+      .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 10%;
+    }
+    
+   .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width: 90%;
+        margin-right: 90px;
+    }
+    
+    .usuario-text{
+        margin-left: 2px;
+    }
+    
+     .fecha-inicial, .fecha-final{
+        width: 45%;
+        height: 30px;
+    }
+    
+    .btn-filtrar{
+        margin-left: 40%;
+    }
+}
+
+@media  (min-width: 1090px) and (max-width: 1399px){
+    .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 9%;
+    }
+    
+    .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width:90%;
+        margin-right: 80px;
+    }
+    
+    .filtro-categoria{
+        width: 18%;
+    }
+    
+    .usuario-text{
+        margin-left: 2px;
+    }
+    
+    .filtro-fecha{
+        width: 38%;
+    }
+     .fecha-inicial, .fecha-final{
+        width: 45%;
+    }
+    
+    .btn-filtrar{
+        margin-left: 40%;
+    }
+}
+
+@media  (min-width: 1400px) and (max-width: 1799px){
+    .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 12%;
+    }
+    
+    .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width: 100%;
+        margin-right: 131px;
+    }
+    
+    .filtro-categoria{
+        width: 18%;
+    }
+    
+    .usuario-text{
+        margin-left: 2px;
+    }
+    
+    .filtro-fecha{
+        width: 42%;
+    }
+     .fecha-inicial, .fecha-final{
+        width: 45%;
+         margin-left: 15px;
+    }
+    
+    .btn-filtrar{
+        margin-left: 43%;
+    }
+}
+
+@media screen and (min-width: 1800px) and (max-width:  2396px){
+     .title-filtrar{
+         text-align: center;
+         align-items: center;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 12%;
+    }
+    
+    .filtro-fecha, .filtro-categoria, .filtro-titulo-usuario{
+        display: table-cell;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width: 320px;
+        height: 40px;
+    }
+    
+    .filtro-categoria{
+        width: 18%;
+    }
+    
+    .usuario-text{
+        margin-left: 2px;
+    }
+    
+    .filtro-fecha{
+        width: 47%;
+    }
+     .fecha-inicial, .fecha-final{
+        width: 45%;
+        height: 40px;
+    }
+    
+    .btn-filtrar{
+        margin-left: 45%;
+    }
+}
+
+@media screen and (min-width: 2397px) and (max-width: 2800px){
+    label{
+        font-size: 2.0em;
+    }
+    
+     .filtro-check, .filtro-check2{
+         margin-left: 12%;
+    }
+    
+    p{
+         font-size: 2.0em;
+    }
+    
+    .buscar-input, .categorias-combo{
+        width: 490px;
+        height: 60px;
+         font-size: 1.5em;
+    }
+    
+    .filtro-categoria{
+        width: 18%;
+    }
+    
+    .usuario-text{
+        margin-left: 2px;
+    }
+    
+    .filtro-fecha{
+        width: 47%;
+    }
+     .fecha-inicial, .fecha-final{
+        width: 45%;
+        height: 60px;
+        font-size: 1.5em;
+        
+    }
+    
+    .btn-filtrar{
+        margin-left: 45%;
+        width: 200px;
+        height: 50px;
+        font-size: 2.0em;
+    }
+}

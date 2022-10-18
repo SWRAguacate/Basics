@@ -1,0 +1,691 @@
+.container4{
+    overflow: hidden;
+    padding-top: 5px;
+    margin: 0 10px;
+    width: 90%;
+}
+
+.vacio{
+    color: white;
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+tr img{
+    width: 100px;
+    height: 70px;
+    margin: auto;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    align-items: left;
+    margin-bottom: 50px;
+}
+
+th, td{
+    padding: 10px;
+}
+
+ td{
+    padding: 10px;
+    border-bottom: 1px solid #419496;
+}
+
+.borrar-curso{
+    background-color: #419496;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #050404;
+}
+
+.borrar-curso:hover{
+    background-color: #e43307;
+    color: white;
+}
+
+th{
+    font-size: 1.2em;
+    color: #419496;
+}
+
+.button_u-full-width{
+    color: black;
+    text-decoration: none;
+    border: 1px solid #419496;
+    padding: 10px;
+    margin-left: 15%;
+    margin-right: 75px;
+    background-color:  #419496;
+}
+
+.TotalCarrito{
+    position: relative;
+    padding-bottom: 5%;
+    left: 40%;
+    font-size: 1.4em;
+    color: #419496;
+}
+
+.input_total{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 18px;
+}
+
+.button_u-full-width2{
+    color: black;
+    text-decoration: none;
+    border: 1px solid #419496;
+    padding: 10px;
+    background-color:  #419496;
+}
+
+.button_u-full-width:hover, .button_u-full-width2:hover{
+     background-color: #4BB6BB;
+}
+
+/*POPUP*/
+.overlay{
+    background: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay.active{
+    visibility: visible;
+}
+
+.right{
+    text-align: center;
+    align-items: center;
+    width: 410px;
+    float: right;
+}
+
+.left{
+    text-align: center;
+    align-items: center;
+    width: 435px;
+    float: left;
+}
+
+.info{
+    text-align: center;
+    position: relative;
+    margin-right: 100px;
+}
+
+.input-curso{
+    margin-right: 40px;
+    background: none;
+    border: none;
+    font-size: 19px;
+}
+
+.popup{
+    background: #050404;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: left;
+    width: 900px;
+}
+
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #419496;
+    transition: .3s ease all;
+}
+
+.popup .btn-cerrar-popup :hover{
+    color: #ffff;
+}
+
+p{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Klee One', cursive;
+}
+
+.info{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Klee One', cursive;
+    text-align: right;
+}
+
+.btn-pagar{
+    background: #419496;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+}
+
+.metodoPago{
+    color: #419496;
+    margin-right: 40px;
+}
+
+
+@media  screen and (min-width: 1024px){
+    .container4{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 50px;
+        width: 90%;
+    }
+    
+    .vacio{
+        color: white;
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 310px;
+        height: 210px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 10px;
+    }
+    
+     td{
+        padding: 10px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        background-color: #419496;
+        border-radius: 50%;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #050404;
+    }
+    
+    th{
+        font-size: 1.7em;
+        color: #419496;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 35%;
+        margin-right: 75px;
+    }
+    
+    .button_u-full-width2{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 791px) and (max-width: 1037px){ 
+    .TotalCarrito{
+        left: 80%;
+    }
+}
+
+@media (min-width: 1038px) and (max-width: 1600px){
+    .container4{
+        overflow: hidden;
+        padding-top: 0px;
+        margin: 0 50px;
+        width: 90%;
+    }
+    
+    .TotalCarrito{
+        left: 90%;
+    }
+    
+    .vacio{
+        color: white;
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 240px;
+        height: 180px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 10px;
+    }
+    
+     td{
+        padding: 10px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        border-radius: 50%;
+        padding: 5px 10px;
+        text-decoration: none;
+    }
+    
+    th{
+        font-size: 1.7em;
+        color: #419496;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 40%;
+        margin-right: 75px;
+    }
+    
+    .button_u-full-width2{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 790px){
+    .container4{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 30px;
+        width: 90%;
+    }
+    
+    .TotalCarrito{
+    position: relative;
+    padding-bottom: 50px;
+    left: 80%;
+    font-size: 1.4em;
+}
+    
+    .vacio{
+        color: white;
+        font-size: 3.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 150px;
+        height: 100px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 10px;
+    }
+    
+     td{
+        padding: 10px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        background-color: #419496;
+        border-radius: 50%;
+        padding: 5px 10px;
+        text-decoration: none;
+        color: #050404;
+    }
+    
+    th{
+        font-size: 1.7em;
+        color: #419496;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 30%;
+        margin-right: 75px;
+    }
+    
+    .button_u-full-width2{
+        color: white;
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}
+
+@media  (min-width: 425px) and (max-width: 700px){
+    .container4{
+        overflow: hidden;
+        padding-top: 20px;
+        margin: 0 30px;
+        width: 90%;
+    }
+    
+    .TotalCarrito{
+    position: relative;
+    padding-bottom: 50px;
+    left: 40%;
+    font-size: 1.4em;
+    color: #419496;
+}
+    
+    .vacio{
+        color: white;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 67px;
+        height: 60px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 5px;
+    }
+    
+     td{
+         font-size: 0.7em;
+        padding: 4px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        background-color: #419496;
+        border-radius: 50%;
+        padding: 2px 5px;
+        text-decoration: none;
+        color: #050404;
+    }
+    
+    th{
+        font-size: 0.8em;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 7%;
+        margin-right: 55px;
+    }
+    
+    .button_u-full-width2{
+        color: white;
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}
+
+@media  (min-width:375px) and (max-width: 424px){
+    .container4{
+        overflow: hidden;
+        padding-top: 0px;
+        margin: 0 15px;
+        width: 90%;
+    }
+    
+    .TotalCarrito{
+    position: relative;
+    padding-bottom: 50px;
+    left: 35%;
+    font-size: 1.4em;
+    color: #419496;
+}
+    
+    .vacio{
+        color: white;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 67px;
+        height: 60px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 5px;
+    }
+    
+     td{
+         font-size: 0.7em;
+        padding: 4px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        background-color: #419496;
+        border-radius: 50%;
+        padding: 2px 5px;
+        text-decoration: none;
+        color: #050404;
+    }
+    
+    th{
+        font-size: 0.8em;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 8%;
+        margin-right: 4px;
+    }
+    
+    .button_u-full-width2{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}
+
+@media  (min-width:320px) and (max-width: 374px){
+    .container4{
+        overflow: hidden;
+        padding-top: 0px;
+        margin: 0 10px;
+        width: 90%;
+    }
+    
+    .TotalCarrito{
+    position: relative;
+    padding-bottom: 50px;
+    left: 35%;
+    font-size: 1.4em;
+    color: #419496;
+}
+    
+    .vacio{
+        color: white;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 67px;
+        height: 50px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 5px;
+    }
+    
+     td{
+         font-size: 0.7em;
+        padding: 4px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        background-color: #419496;
+        border-radius: 50%;
+        padding: 2px 5px;
+        text-decoration: none;
+        color: #050404;
+    }
+    
+    th{
+        font-size: 0.8em;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 4%;
+        margin-right: 1px;
+    }
+    
+    .button_u-full-width2{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}
+
+@media  (min-width:290px) and (max-width: 320px){
+    .container4{
+        overflow: hidden;
+        padding-top: 0px;
+        margin: 0 0px;
+        width: 99%;
+    }
+    
+    .TotalCarrito{
+    position: relative;
+    padding-bottom: 50px;
+    left: 35%;
+    font-size: 1.4em;
+    color: #419496;
+}
+    
+    .vacio{
+        color: white;
+        font-size: 2.2rem;
+        text-align: center;
+    }
+    
+    tr img{
+        width: 67px;
+        height: 50px;
+        margin: auto;
+    }
+    
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        align-items: left;
+        margin-bottom: 50px;
+    }
+    
+    th, td{
+        padding: 5px;
+    }
+    
+     td{
+         font-size: 0.7em;
+        padding: 4px;
+        border-bottom: 1px solid #419496;
+    }
+    
+    .borrar-curso{
+        background-color: #419496;
+        border-radius: 50%;
+        padding: 2px 5px;
+        text-decoration: none;
+        color: #050404;
+    }
+    
+    th{
+        font-size: 0.8em;
+    }
+    
+    .button_u-full-width{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+        margin-left: 4%;
+        margin-right: 1px;
+    }
+    
+    .button_u-full-width2{
+        text-decoration: none;
+        border: 1px solid #419496;
+        padding: 10px;
+    }
+}

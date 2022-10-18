@@ -1,0 +1,383 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+section{
+    width: 100%;
+}
+
+
+div.app{
+    position: relative;
+    width: 380px;
+    height: 630px;
+    background: #2A2A2A;
+    margin-top: 30px;
+}
+
+div.app:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    box-shadow: inset 0 80px 85px -35px black;
+    z-index: 0;
+}
+
+div.app:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    display: inline-block;
+    bottom: 0;
+    box-shadow: inset 0 -80px 85px -35px black;
+    z-index: 0;
+}
+
+div.app div.head{
+    z-index: 1;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 50px;
+    line-height: 48px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: black;
+
+    background: #419496;
+    border-bottom: 1px solid rgba(1, 1, 1, 0.35);
+    box-shadow: inset 0 -15px 35px -5px rgba(0, 0, 0, 0.3);
+}
+
+div.head span.title{
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    left: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 2px;
+    color: black;
+}
+
+div.head span.messages-notification{
+    position: relative;
+    float: left;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 15px;
+    color: black;
+    margin-top: 2px;
+}
+
+div.head span.messages-notification span.count{
+    position: absolute;
+    font-size: 10px;
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: #2A2A2A;
+    line-height: 17px;
+    color: white;
+    border-radius: 100%;
+    margin-top: 7px;
+}
+
+div.head span.create-new{
+    float: right;
+    font-size: 20px;
+    font-weight: normal;
+    margin-right: 15px;
+    color: white;
+    margin-top: 2px;
+}
+
+.clearfix::after{
+    content: '';
+    clear: both;
+    display: table;
+}
+
+div.search-bar{
+    position: relative;
+    margin-top: 15px;
+    text-align: center;
+    z-index: 1;
+}
+
+div.search-bar .ip-search{
+    width: 90%;
+    border: none;
+    font-size: 14px;
+    padding: 10px 15px;
+    color: rgba(255, 255, 255, 0.7);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    border: 1px solid #419496;
+    box-shadow: inset 0 25px 25px -15px rgba(60, 51, 176, 0.15);
+}
+
+div.search-bar .ip-search::placeholder{
+    color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+div.search-bar i.fa{
+    position: absolute;
+    right: 0;
+    margin-right: 39px;    
+    margin-top: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+}
+
+.friend-list{
+    margin-top: 35px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.friend-list ul li{
+    position: relative;
+    list-style: none;
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+
+.friend-list ul li img{
+    border-radius: 100%;
+    border: 3px solid rgba(92, 225, 230, 1);
+}
+
+.friend-list ul li span.name{
+    position: relative;
+    width: 100%;
+    left: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.friend-list ul li.active span.name{
+    top: -7px;
+}
+
+div.chat-messages{
+    position: relative;
+    margin-top: 15px;
+    z-index: 10;
+    overflow-y: auto;
+}
+
+div.chat-messages div.chat{
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: grey;
+    left: 0%;
+    margin-top: 10%;
+    margin-left: 0px;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 15px;
+    overflow-y: auto;
+}
+
+div.chat div.chat-content > span{
+    margin-bottom: 6px;
+}
+
+div.chat div.chat-content span.friend{
+    position: relative;
+    width: 70%;
+    height: auto;
+    display: inline-block;
+    background: #2A2A2A;
+    padding: 10px;
+    padding-bottom: 25px;
+    box-shadow: 2px 2px 20px -2px rgba(60, 51, 176, 0.2);
+    color: white;
+}
+
+div.chat div.chat-content span.friend.first{
+    border-radius: 15px 15px 15px 2px;
+}
+
+div.chat div.chat-content span.friend.last{
+    border-radius: 2px 15px 15px 15px;
+}
+
+div.chat div.chat-content span.you{
+    position: relative;
+    float: right;
+    width: 70%;
+    height: auto;
+    background: #419496;
+    
+    padding: 10px;
+    padding-bottom: 25px;
+    color: rgb(1,1,1);
+}
+
+div.chat div.chat-content span.you.first{
+    border-radius: 15px 15px 2px 15px;
+}
+
+div.msg-box{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0px;
+    border-top: 1px solid rgba(60, 51, 176, 0.1);
+    overflow: hidden;
+}
+
+div.msg-box .ip-msg{
+    width: 100%;
+    height: 50px;
+    font-size: 14px;
+    padding: 5px;
+    padding-right: 0%;
+    color: white;
+    border: none;
+    background: #2A2A2A;
+}
+
+ .fa-paper-plane{
+        margin-right: -120px;
+}
+
+div.msg-box .ip-msg::placeholder{
+    color: white;
+}
+
+div.msg-box span.btn-group{
+    position: absolute;
+    right: 90px;
+    margin-top: 14px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+div.msg-box span.btn-group i{
+    font-size: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.edit{
+    background-color: #FFCF00;
+    outline: none;
+    border: none;
+}
+
+.edit, .delate{
+    background-color: #555;
+    outline: none;
+    border: none;
+    width: 50px;
+    height: 20px;
+    color: white;
+    margin-left: 70px;
+    margin-top: 4px;
+}
+
+/*===============================  ESTILOS RESPONSIVE  ===============================*/
+@media  screen and (min-width: 320px){
+    .fa-paper-plane{
+        margin-left: 65px;
+    }
+    
+    .edit, .delate{
+    margin-left: 20px;
+    margin-top: 4px;
+}
+}
+
+@media  screen and (min-width: 375px){
+    .edit, .delate{
+    margin-left: 30px;
+    margin-top: 4px;
+}
+}
+
+@media  screen and (min-width: 425px){
+    .edit, .delate{
+    margin-left: 50px;
+    margin-top: 4px;
+}
+}
+
+
+@media  screen and (min-width: 768px){
+    .friend-list ul li img {
+        width: 100px;
+        margin-left: 27px;
+    }
+    
+    div.chat-messages div.chat{
+    margin-top: 2%;
+    margin-left: 0px;
+    overflow-y: auto;
+    }
+    
+     .edit, .delate{
+    margin-left: 140px;
+    margin-top: 4px;
+}
+}
+
+@media  screen and (min-width: 1024px){
+    .friend-list ul li img {
+        width: 100px;
+        margin-left: 48px;
+    }
+    
+    div.chat-messages div.chat{
+    margin-top: 2%;
+    margin-left: 0px;
+    overflow-y: auto;
+    }
+    
+    .friend-list ul li span.name{
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+   .edit, .delate{
+    margin-left: 230px;
+    margin-top: 4px;
+}
+}
+
+@media  screen and (min-width: 1440px){
+    .edit, .delate{
+    margin-left: 350px;
+    margin-top: 4px;
+    }
+    
+      .friend-list ul li img {
+        width: 100px;
+        margin-left: 95px;
+    }
+}

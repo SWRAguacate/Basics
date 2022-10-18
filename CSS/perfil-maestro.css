@@ -1,0 +1,760 @@
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Lora&family=Open+Sans:wght@800&display=swapfamily=Poppins:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.regresar{
+    color: #4BB6BB;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.container3{
+    overflow: hidden;
+    padding-top: 50px;
+    margin: 0 100px;
+}
+
+.profile-header{
+    background: none;
+    width: 100%;
+    display: flex;
+    height: 190px;
+    position: relative;
+}
+
+.profile-img{
+    float: left;
+    width: 340px;
+    height: 200px;
+}
+
+.profile-img img{
+    border-radius: 50%;
+    height: 230px;
+    width: 230px;
+    border: 4px solid #419496;
+    position: relative;
+    left: 50px;
+    top: 20px;
+    z-index: 5;
+}
+
+.profile-nav-info{
+    float: left;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.profile-nav-info h3{
+    color: white;
+    font-family: 'Klee One', cursive;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+.profile-nav-info .fechainicio{
+    display: flex;
+    font-weight: bold;
+    color: white;
+    font-size: .9em;
+    margin-right: 5px;
+    padding-top: 15px;
+}
+
+.main-bd{
+    width: 100%;
+    display: flex;
+    padding-right: 15px;
+}
+
+.profile-side{
+    width: 300px;
+    background: none;
+    padding: 90px 30px 20px;
+    margin-left: 10px;
+    z-index: 999;
+}
+
+.profile-side p , div{
+    margin-bottom: 2px;
+    font-size: 15px;
+}
+
+.profile-side p i  ,.user-rol i{
+   color: #419496;
+   margin-bottom: 15px;
+   margin-right: 10px;
+}
+
+.profile-btn{
+    display: flex;
+}
+
+button.chatbtn,
+button.editbtn{
+    padding-top: 10px;
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    border-radius: 3px;
+    background: #419496;
+    font-size: 1rem;
+    margin: 5px 2px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.chatbtn a, .editbtn a{
+    text-decoration: none;
+    color: black;
+}
+
+button.chatbtn:hover,
+button.editbtn:hover{
+    background: #4BB6BB;
+}
+
+button.chatbtn i,
+button.editbtn i{
+    margin-right: 5px;
+    color: black;
+}
+
+.fechaedit h5{
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.nav{
+    width: 150%;
+    z-index: -1;
+}
+
+.nav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    height: 40px;
+    background: #4BB6BB;
+    cursor: pointer;
+}
+
+
+.nav ul li {
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.nav ul li.active,
+.nav ul li:hover{
+    box-shadow: 0px -3px 0px rgba(75, 182, 187, .9) inset;
+}
+
+.profile-cursos{
+    width: 100%;
+    z-index: -1;
+}
+
+.profile-cursos h1{
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Klee One', cursive;
+    font-size: 2.3rem;
+    color: #419496;
+}
+
+.profile-miscursos{
+    background: #1a1818;
+    padding: 10px 30px 20px;
+    display: flex;
+    margin: 15px;
+    
+}
+
+.profile-miscursos img{
+    height: 180px;
+    width: 230px;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 0;
+}
+
+.datoscurso ul{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.datoscurso li{
+    display: flex;
+    justify-content: left;
+    list-style-type: none;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.curso-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.vercurso{
+    padding-top: 10px;
+    border: 0;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 3px;
+    background: #419496;
+    font-size: 1rem;
+    margin: 5px 1px;
+    cursor: pointer;
+    outline: none;
+    margin-bottom: 10px;
+    color: black;
+}
+
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    border-color: white;
+}
+
+th,td{
+    padding: 15px;
+    border-bottom: solid 1px #4BB6BB;
+}
+
+.fa-check-circle{
+    color: green;
+    font-size: 1.8em;
+}
+
+.btn-edit{
+    background: #FFCF00;
+    border: none;
+    outline: none;
+    border: 2px;
+    font-size: 0.9em;
+    height: 20px;
+    width: 50px;
+}
+
+.btn-delete{
+    background: #E44D26;
+    border: none;
+    outline: none;
+    border: 2px;
+    font-size: 0.9em;
+    height: 20px;
+    width: 50px;
+}
+
+.profile-miscursos a{
+    text-decoration: none;
+    color: #4BB6BB;
+}
+
+
+@media (max-width: 1024px){
+    .profile-side{
+        width: 250px;
+        padding: 90px 15px 20px;
+    }
+
+    .profile-img img{
+        height: 200px;
+        width: 200px;
+        left: 50px;
+        top: 50px;
+    }
+
+    .curso-title{
+        font-size: 1.0rem;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        border-color: white;
+    }
+    
+    th,td{
+        padding: 10px;
+        border-bottom: solid 1px #4BB6BB;
+        font-size: 0.8em;
+    }
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 1.8em;
+    }
+    
+    .btn-edit{
+        background: #FFCF00;
+        border: none;
+        outline: none;
+        border: 2px;
+        font-size: 0.9em;
+        height: 20px;
+        width: 50px;
+        cursor: pointer;
+    }
+    
+    .btn-delete{
+        background: #E44D26;
+        border: none;
+        outline: none;
+        border: 2px;
+        font-size: 0.9em;
+        height: 20px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+}
+
+
+
+@media (max-width: 834px){
+    boody{
+        margin: 0 20px;
+    }
+
+    .profile-header {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .profile-img{
+        float: left;
+        width: 100%;
+        height: 600%;
+        padding-left: 220px;
+    }
+
+    .profile-img img{
+        position: relative;
+        left: 0;
+    }
+
+    .profile-nav-info{
+        text-align: center;
+    }
+
+    .profile-nav-info .desde{
+        justify-content: center;
+    }
+
+    .main-bd{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+
+    .profile-side{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 5px 0;
+    }
+
+    .profile-cursos h1{
+        text-align: center;
+    }
+
+    .desde{
+        padding-left: 250px;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    .btn-edit, .btn-delete{
+        cursor: pointer;
+    }
+}
+
+/*===============================  ESTILOS PAGINACION  ===============================*/
+.paginacion {
+	margin:20px 0;
+}
+
+.paginacion ul {
+	list-style:none;
+	text-align: center;
+}
+
+.paginacion ul li {
+	display:inline-block;
+	margin-right:10px;
+}
+
+.paginacion ul li a {
+	display:block;
+	padding:10px 20px;
+	color:#050404;
+	background:#61CF31;
+	text-decoration: none;
+}
+
+.paginacion ul li a:hover {
+	background:#316d17;
+    color: white;
+}
+
+.paginacion ul li .active {
+	background:#316d17;
+	font-weight:bold;
+    color: white;
+}
+
+@media (max-width: 768px){
+    boody{
+        margin: 0 20px;
+    }
+
+    .profile-header {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .profile-img{
+        float: left;
+        width: 100%;
+        height: 600%;
+        padding-left: 175px;
+    }
+
+    .profile-img img{
+        position: relative;
+        left: 0;
+    }
+
+    .profile-nav-info{
+        text-align: center;
+    }
+
+    .profile-nav-info .desde{
+        justify-content: center;
+    }
+
+    .main-bd{
+        flex-direction: column;
+        padding-right: 0px;
+    }
+
+    .profile-side{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        margin: 5px 0;
+    }
+
+    .profile-cursos h1{
+        text-align: center;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    .btn-edit, .btn-delete{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 506px){
+    .container3{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 50px;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .profile-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .profile-header p,
+    .profile-header span{
+        font-size: .9rem;
+    }
+
+    .profile-img{
+        padding-left: 120px;
+    }
+
+    .desde{
+        text-align: center;
+        padding-left: 5px;
+    }
+
+    .profile-miscursos img{
+        display: none;
+    }
+
+    .profile-miscursos ul{
+        text-align: center;
+    }
+
+    button.chatbtn,
+    button.editbtn{
+    font-size: 0.9rem
+    }
+
+    .profile-side p , div{
+        font-size: 12px;
+        justify-content: center;
+    }
+
+    .datoscurso li{
+        justify-content: center;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    table{
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+        border-color: white;
+    }
+    
+    th,td{
+        padding: 10px;
+        border-bottom: solid 1px #4BB6BB;
+        font-size: 0.6em;
+    }
+    
+    .fa-check-circle{
+        color: green;
+        font-size: 1.8em;
+    }
+    
+    .btn-edit{
+        background: #FFCF00;
+        border: none;
+        outline: none;
+        border: 2px;
+        font-size: 0.9em;
+        height: 20px;
+        width: 50px;
+        cursor: pointer;
+    }
+    
+    .btn-delete{
+        background: #E44D26;
+        border: none;
+        outline: none;
+        border: 2px;
+        font-size: 0.9em;
+        height: 20px;
+        width: 50px;
+        cursor: pointer;
+    }
+
+   
+}
+
+@media (max-width: 498px){
+    .container3{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 30px;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .profile-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .profile-header p,
+    .profile-header span{
+        font-size: .9rem;
+    }
+
+    .profile-img{
+        padding-left: 110;
+    }
+
+    .desde{
+        text-align: center;
+        padding-left: 15px;
+    }
+
+    .profile-miscursos img{
+        display: none;
+    }
+
+    .profile-miscursos ul{
+        text-align: center;
+    }
+
+    button.chatbtn,
+    button.editbtn{
+    font-size: 0.9rem
+    }
+
+    .profile-side p , div{
+        font-size: 12px;
+    }
+
+    .datoscurso li{
+        justify-content: center;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    .btn-edit, .btn-delete{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 515px){
+    .container3{
+        overflow: hidden;
+        padding-top: 50px;
+        margin: 0 10px;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .profile-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .profile-header p,
+    .profile-header span{
+        font-size: .9rem;
+    }
+
+    .profile-img{
+        padding-left: 150px;
+    }
+
+    .desde{
+        text-align: center;
+        padding-left: 170px;
+    }
+
+    .profile-miscursos img{
+        display: none;
+    }
+
+    .profile-miscursos ul{
+        text-align: center;
+    }
+
+    button.chatbtn,
+    button.editbtn{
+    font-size: 0.9rem
+    }
+
+    .profile-side p , div{
+        font-size: 12px;
+    }
+
+    .datoscurso li{
+        justify-content: center;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    .btn-edit, .btn-delete{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 255px){
+    
+    body{
+        margin: 0;
+    }
+
+    .profile-header h3 {
+        font-size: 1.7rem;
+    }
+
+    .profile-header p,
+    .profile-header span{
+        font-size: .9rem;
+    }
+
+    .profile-img{
+        padding-left: 30px;
+    }
+
+    .desde{
+        text-align: center;
+        padding-left: 35px;
+    }
+
+    .profile-miscursos img{
+        display: none;
+    }
+
+    .profile-miscursos ul{
+        text-align: center;
+    }
+
+    button.chatbtn,
+    button.editbtn{
+    font-size: 0.9rem
+    }
+
+    .profile-side p , div{
+        font-size: 12px;
+    }
+
+    .datoscurso li{
+        justify-content: center;
+    }
+
+    .profile-miscursos{
+        overflow: scroll;
+    }
+
+    .btn-edit, .btn-delete{
+        cursor: pointer;
+    }
+}

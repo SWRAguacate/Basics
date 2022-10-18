@@ -1,0 +1,469 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.form-fases {
+    border: 0.6px solid green;
+    border-bottom: none;
+}
+
+.contenidos-list{
+    border: 0.6px solid green;
+    border-top: none;
+}
+
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white !important;
+    text-decoration: none !important;
+}
+
+input {
+    background: #1a1818;
+    outline: none;
+}
+
+.subirDatos{
+        margin: 0 10px;
+}
+
+.subir{
+   display: none;
+}
+
+h3{
+    font-family: 'Klee One', cursive;
+    text-align:  center;
+    font-size: 2.3rem;
+    color: #419496;
+    margin-top: 20px;
+}
+
+.gratis{
+    font-size: 19px;
+    padding-right: 50px;
+}
+
+label{
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.INPUT-INFO{
+    width: 99%;
+    height: 55px;
+    background: #1a1818;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: 0 .4rem;
+    border: none;
+    border-bottom: 2px solid #419496;
+    color: whitesmoke;
+    padding-left: 15px;
+}
+
+.INPUT-DESCRIPCION{
+    width: 100%;
+    max-height: 115px;
+    min-height: 115px;
+    background: #1a1818;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: 0 .4rem;
+    border: none;
+    border-bottom: 2px solid #419496;
+    color: whitesmoke;
+    padding-left: 15px;
+}
+
+.INPUT-DESCRIPCION2{
+    width: 100%;
+    max-height: 115px;
+    min-height: 115px;
+    background: #1a1818;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: 0 .4rem;
+    border: none;
+    border-bottom: 2px solid #419496;
+    color: whitesmoke;
+    padding-left: 15px;
+}
+
+.INPUT-COSTO{
+    width: 100%;
+    height: 55px;
+    background: #1a1818;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-size: .9rem;
+    padding: 0 .4rem;
+    border: none;
+    border-bottom: 2px solid #419496;
+    color: whitesmoke;
+    padding-left: 15px;
+}
+
+.categoria-label{
+    position: relative;
+    left: 0px;
+}
+
+.mul-select{
+    color: #1a1818;
+}
+
+input[type=text]:focus ,input[type=number]:focus {
+    border: 3px solid #419496;
+    outline: none;
+  }
+
+.descripcion{
+    width: 600px;
+    height: 200px;
+}
+
+input[type=file]{
+    justify-content: center;
+    padding-top: 15px;
+    font-size: 0.6em;
+}
+
+th{
+    font-size: 1em;
+    color: #419496;
+    font-weight: bold;
+    font-family: 'Lora', serif;
+}
+
+.ConSin, .categorias, .costo{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    color: #419496;
+    background: #1a1818;
+}
+
+.btn-fase{
+    background: #419496;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 110px;
+    height: 30px;
+    font-family: 'Lora', serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+.btn-fase:hover{
+    background: #4BB6BB;
+}
+
+.btn-edit{
+    background: #44fd06;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 120px;
+    height: 30px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 5px;
+    font-size: .8em;
+}
+
+.btn-edit:hover{
+    background: #ffef08;
+}
+
+.mul-select {
+    width: 100%;
+}
+
+.btn-delete{
+    background: #E44D26;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 16px;
+    height: 20px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: .8em;
+}
+
+.btn-delete-fas{
+    background: #E44D26;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 70px;
+    height: 30px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: .8em;
+    margin-bottom: 10px;
+}
+
+.btn-delete:hover{
+    background: #e43307;
+}
+
+.subtitle-imgcurso{
+    color: #4BB6BB;
+    margin-top: 10px;
+}
+
+.input-img{
+    
+    color: #4BB6BB;
+}
+
+.imgCarga{
+    
+    color: #4BB6BB;
+}
+
+.text-categoria{
+    color: #4BB6BB;
+    margin-top: 15px;
+}
+
+.btn-abrir-popup{
+    background: #419496;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 140px;
+    height: 30px;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin-top: 7px;
+}
+
+.tabla{
+    width: 100px;
+    height: 55px;
+    background: #1a1818;
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: .6rem;
+    border: none;
+    border-bottom: 2px solid #419496;
+    color: whitesmoke;
+    padding-left: 5px;
+    margin: 2px;
+ }
+
+/*===============================  ESTILOS OVERLAY  ===============================*/
+
+.overlay{
+    background: rgba(0, 0, 0, .7);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.overlay .active{
+    visibility: visible;
+}
+
+.popup{
+    background: #141414;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, .6);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 600px;
+}
+
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #e43307;
+    transition: .3s ease all; 
+}
+
+.popup .btn-cerrar-popup:hover{
+    color: white;
+}
+
+.descripcion-categoria{
+    width: 500px;
+    height: 75px;
+    background: #1a1818;
+}
+
+.btn-submit{
+    background: #419496;
+    color: black;
+    border-radius: 2px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+    font-family: 'Lora', serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    font-size: 1.1em;
+}
+
+.btn-submit:hover{
+    background: #4BB6BB;
+}
+
+
+/*===============================  ESTILOS RESPONSIVE  ===============================*/
+@media (min-width: 320px) and (max-width: 750px) {
+    h3{
+        font-size: 1.9em;
+    }
+    
+    label, .text-categoria{
+        font-size: 1.2em;
+    }
+    
+    .tabla{
+        width: 98%;
+        border-collapse: collapse;
+    }
+    
+    table, thead, tbody,td,tr{
+        display: block;
+    }
+    
+    th{
+        padding-right: 15px;
+    }
+    
+    .btn-delete-fas{
+    margin-bottom: 10px;
+    margin-left: 70px;
+}
+
+}
+
+@media  (min-width: 768px) and (max-width:900px){
+    .subirDatos{
+        margin: 0 5px;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    .tabla{
+       width: 180px;
+       height: 55px;
+       background: #1a1818;
+       margin: 10px 0;
+       border-radius: 4px;
+       font-size: .9rem;
+       padding: 0 .4rem;
+       border: none;
+       border-bottom: 2px solid #419496;
+       color: whitesmoke;
+       padding-left: 15px;
+    }
+
+    .btn-edit{
+        width: 140px;
+        height: 30px;
+        font-size: .9em;
+        margin-bottom: 30px;
+    }
+    
+    .btn-delete{
+        width: 20px;
+        height: 20px;
+        font-size: .9em;
+        margin: 5px;
+    }
+    
+    th{
+    font-size: 0.5em;
+    }   
+}
+@media  screen and (min-width: 1024px){
+    .derecha{
+            position: absolute;
+            right:20px;
+            top: 164px;
+            width: 40%;
+     }
+     
+     h3{
+         width: 190%;
+     }
+
+    .subirDatos{
+        margin: 0 10px;
+        width: 50%;
+        text-align: left;
+    }
+    
+    .form-fases, .contenidos-list{
+        width: 190%;
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    
+     .tabla{
+            width: 233px;
+         }
+     
+     .th {
+            font-size: 2.5em;
+      }
+      
+      .INPUT-COSTO{
+         width: 40%;
+      }
+      
+    }
+    
+ @media  screen and (min-width: 1400px){
+     .INPUT-INFO, .INPUT-DESCRIPCION{
+         width: 70%;
+     }
+     
+     .subir{
+            display: initial;
+            height: 290px;
+        }
+        
+}

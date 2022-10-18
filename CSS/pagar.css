@@ -1,0 +1,287 @@
+.header{
+    color: white;
+}
+
+.main-footer{
+    clear: both;
+}
+
+.pagar-form{
+    width: 100%;
+    margin: 0 0px;
+}
+
+.right{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    float: left;
+    background: none;
+}
+
+.left{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background: none;
+    position: relative;
+    float: left;
+}
+
+/*Tarjetaaaa*/
+#Tarjeta{
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    background: none;
+    position: relative;
+    float: left;
+}
+
+.numTarjeta{
+    background: none;
+    border: 1px solid #419496;
+    height: 30px;
+    width: 280px;
+}
+
+.selectTarjeta{
+    margin-left: 10px;
+    height: 30px;
+    width: 80px;
+}
+
+.cvv{
+    background: none;
+    border: 1px solid #419496;
+    height: 30px;
+    width: 95px;
+    color: white;
+    margin-left: 10px;
+}
+
+.info{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Klee One', cursive;
+    text-align: center;
+    width: 100%;
+    color: #419496;
+}
+
+/*** INFORMACION DE LA COMPRA***/
+
+.descripcion{
+    text-align: center;
+    font-size: 14px;
+    width: 100%;
+}
+
+.input-curso{  
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 14px;
+    outline: none;
+    text-align: center;
+    color: #61CF31;
+}
+
+.precio-curso{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+
+.label-total{
+    color: #419496;
+    outline: none;
+    text-align: center;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.input-curso2{  
+    width: 10%;
+    background: none;
+    border: none;
+    font-size: 14px;
+    color: white;
+    outline: none;
+    text-align: center;
+}
+
+/*** INFORMACION DE PAYPAL***/
+#PayPal{
+    width: 100%;
+}
+.payPal-titulo{
+    width: 100%;
+    font-size: 0.7em;
+    margin-right: 0px;
+}
+
+.title-numero{
+     color: #419496;
+     font-size: 1.5em;
+}
+
+.input-referencia{
+    background: none;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 1.0em;
+    letter-spacing: 6px;
+    text-align: center;
+}
+
+.btn-PayPal{
+    background: #009cde;
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 400px;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+    font-style: italic;
+}
+
+.popup .btn-cerrar-popup{
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #419496;
+    transition: .3s ease all;
+}
+
+.popup .btn-cerrar-popup :hover{
+    color: #ffffff;
+}
+
+.titulo-pago{
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-family: 'Klee One', cursive;
+}
+
+.btn-pagar{
+    background: #419496;
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.metodoPago{
+    color: #419496;
+    margin-right: 40px;
+}   
+
+select{
+    background: none;
+    border: 1px solid #419496;
+    padding: 2px;
+    width: 140px;
+    height: 40px;
+    color:#419496;
+    outline: none;
+}
+
+footer{
+    margin-top: 450px;
+    height: 80%;
+    width: 100%;
+}
+
+.editar{
+    text-decoration: none;
+    color: grey;
+}
+
+.editar:hover{
+    color: #419496;
+    position: relative;
+}
+
+@media  screen and (min-width: 320px){
+    .titulo-pago{
+        font-size: 20px;
+    }
+    
+    .payPal-titulo{
+        margin-right: 10px;
+    }
+    
+    .btn-PayPal {
+    background: #009cde;
+    height: 40px;
+    width: 250px;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-style: italic;
+}
+
+select{
+    text-align: center;
+}
+}
+
+@media  screen and (min-width: 768px){
+    .titulo-pago{
+        font-size: 20px;
+    }
+    
+    .right{
+    text-align: right;
+    width: 48%;
+    position: relative;
+    float: right;
+    background: none;
+}
+
+.left{
+    text-align: center;
+    align-items: center;
+    width: 48%;
+    background: none;
+    position: relative;
+    float: left;
+}
+
+.input-curso2 {
+    width: 30%;
+}
+
+.editar{
+    width: 40%;
+    margin-right: 30px;
+}
+}
+
+@media  screen and (min-width: 1024px){
+    .right{
+    width: 50%;
+}
+
+.left{
+    width: 50%;
+}
+}
+
+@media  screen and (min-width: 1440px){
+    .right{
+    width: 40%;
+}
+
+.left{
+    width: 60%;
+}
+}

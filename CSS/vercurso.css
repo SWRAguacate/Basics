@@ -1,0 +1,545 @@
+.container-izq{
+    width: 60%;
+    margin: 0 90px;
+}
+
+/*.main-footer{
+    clear: both;
+}*/
+
+.title-curso{
+    color: #419496;
+    font-size: 1.4em;
+    border-top:10px;
+    border-bottom: 20px;
+    border-bottom: 20px;
+    font-family: 'Klee One', cursive;
+}
+
+.title-maestro{
+    color: white;
+    font-size: 1.0em;
+    border-top: 50px;
+}
+
+.title-fase{
+    color: white;
+    font-size: 1.9em;
+}
+
+.terminar{
+    margin-top: 50px;
+    width: 200px;
+    height: 30px;
+    background-color: #419496;
+    outline: none;
+    border: none;
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    font-size: 0.7em;
+    cursor: pointer;
+}
+
+.container-right{
+    width: 250px;
+    top: -670px;
+    left: 0%;
+    margin: 0 90px;
+}
+
+.nombre-curso{
+    font-size: 0.9em;
+    color: #419496;
+}
+
+.nombre-curso2{
+    font-size: 0.9em;
+    color: #419496;
+}
+
+.circle--gray{
+    background-color: #0e0d0d ;
+}
+
+.circle--lg{
+    width: 2rem;
+    height: 2rem;
+    font-size: .6875rem;
+    line-height: 2rem;
+}
+
+.circle{
+    display: inline-block;
+    text-align: center;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.curso{
+    text-decoration: none;
+}
+
+.nombre-fase{
+   text-align: left;
+    text-decoration: none;
+    color: white;
+}
+
+.nombre-fase2{
+   text-align: left;
+   text-decoration: none;
+   color: white;
+}
+
+.nombre-fase:hover{
+    color: #419496;
+}
+
+.fases{
+    margin-bottom: 20px;
+}
+
+.recursos-adicionales{
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 1.0em;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 0.9em;
+}
+
+.link:hover{
+    color: #419496;
+}
+
+/********---------------- ESTILOS RESPONSIVE---------------- *******/
+@media  screen and (min-width: 320px){
+    .container-izq, .container-right{
+        width: 100%;
+        margin: 0 2px;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .title-curso{
+        font-size: 1.4em;
+        border-top:10px;
+        border-bottom: 20px;
+        text-align: center;
+    }
+    
+    .title-maestro{
+        font-size: 1.0em;
+        text-align: center;
+    }
+    
+     .title-fase{
+        font-size: 0.9em;
+        height: 30px;
+        text-align: center;
+    }
+    
+    iframe{
+        width: 95%;
+        height: 200px;
+        overflow: auto;
+    }
+ 
+    .terminar{
+        margin-top: 30px;
+        width: 200px;
+        height: 30px;
+        font-size: 0.7em;
+    }
+    
+    .container-right{
+        width: 250px;
+        top: -670px;
+        left: 0%;
+        margin: 0 20px;
+    }
+    
+    .nombre-curso{
+        font-size: 0.5em;
+        color: #419496;
+    }
+    
+     .nombre-curso2{
+        font-size: 0.8em;
+        color: #419496;
+        text-align: center;
+    }
+    
+    .nombre-fase2, .nombre-fase{
+         font-size: 0.7em;
+    }
+    
+    .circle--gray{
+        background-color: #0e0d0d ;
+    }
+    
+    .circle--lg{
+        width: 2rem;
+        height: 2rem;
+        font-size: .6875rem;
+        line-height: 2rem;
+    }
+    
+    .circle{
+        display: inline-block;
+        text-align: center;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    
+    .curso{
+        text-decoration: none;
+    }
+    
+    .nombre-fase{
+       text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .fases{
+        margin-bottom: 20px;
+    }
+    
+    .recursos-adicionales{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 1.0em;
+    }
+    
+    .link{
+        text-decoration: none;
+        color: white;
+        font-size: 0.9em;
+    }
+    
+    .link:hover{
+        color: #419496;
+    }
+}
+
+@media  screen and (min-width: 375px){
+    .container-izq, .container-right{
+        width: 100%;
+        margin: 0 2px;
+        align-content: center;
+        align-items: center;
+        text-align: center;
+    }
+   
+    .info-curso{
+       width: 100%;
+    }
+    
+    .nombre-curso{
+        font-size: 0.5em;
+        color: #419496;
+        text-align: center;
+    }
+    
+     .nombre-curso2{
+        font-size: 0.8em;
+        color: #419496;
+        text-align: center;
+    }
+    
+    .nombre-fase2, .nombre-fase{
+         font-size: 0.7em;
+    }
+    
+}
+
+@media  screen and (min-width: 768px){ /*tamaño de mi pantalla*/
+    .container-izq{
+        width: 60%;
+        margin: 0 12px;
+    }
+    
+    .title-curso{
+        color: #419496;
+        font-size: 2.4em;
+        border-top:10px;
+        border-bottom: 10px;
+        border-bottom: 20px;
+        font-family: 'Klee One', cursive;
+    }
+    
+    .title-maestro{
+        color: white;
+        font-size: 1.2em;
+        border-top: 50px;
+    }
+    
+    .title-fase{
+        color: white;
+        font-size: 1.2em;
+        height: auto;
+    }
+    
+    .terminar{
+        margin-top: 5px;
+        width: 200px;
+        height: 50px;
+        background-color: #419496;
+        font-size: 0.9em;
+        cursor: pointer;
+        
+    }
+    
+    .container-right{
+        float: right;
+        width: 350px;
+        top: -520px;
+        left: 3%;
+        position: relative;
+    }
+    
+    .nombre-curso{
+        font-size: 1.2em;
+        color: #419496;
+    }
+    
+    .circle--gray{
+        background-color: #0e0d0d ;
+    }
+    
+    .circle--lg{
+        width: 2rem;
+        height: 2rem;
+        font-size: .6875rem;
+        line-height: 2rem;
+    }
+    
+    .circle{
+        display: inline-block;
+        text-align: center;
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    
+    .curso{
+        text-decoration: none;
+    }
+    
+    .nombre-fase{
+       text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .nombre-fase:hover{
+        color: #419496;
+    }
+    
+    .fases{
+        margin-bottom: 20px;
+    }
+    
+    .recursos-adicionales{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+    
+    .link{
+        text-decoration: none;
+        color: white;
+    }
+    
+    .link:hover{
+        color: #419496;
+    }
+    
+     iframe{
+        width: 95%;
+        height: 250px;
+        overflow: auto;
+    }
+}
+
+/*aqui me quede en el responsive,*/
+
+
+@media  screen and (min-width: 1024px){
+    .container-izq{
+        width: 60%;
+        margin: 0 40px;
+    }
+    
+    .title-curso{
+        color: #419496;
+        font-size: 2.7em;
+        border-top:10px;
+        border-bottom: 10px;
+        border-bottom: 20px;
+        font-family: 'Klee One', cursive;
+    }
+    
+    .title-maestro{
+        color: white;
+        font-size: 1.2em;
+        border-top: 50px;
+    }
+    
+    .title-fase{
+        font-size: 1.5em;
+        height: 40px;
+    }
+    
+    .terminar{
+        margin-top: 50px;
+        width: 290px;
+        height: 50px;
+        background-color: #419496;
+        outline: none;
+        border: none;
+        font-family: 'Lora', serif;
+        font-weight: bold;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    
+    .container-right{
+        float: right;
+        width: 350px;
+        top: -690px;
+        left: 0%;
+        position: relative;
+    }
+
+    video{
+        width: 100%;
+        height: 340px;
+    }
+    
+    .nombre-curso{
+        font-size: 1.2em;
+        color: #419496;
+    }
+    
+    .circle--gray{
+        background-color: #0e0d0d ;
+    }
+    
+    .curso{
+        text-decoration: none;
+    }
+    
+    .nombre-fase{
+       text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+    
+   
+    .fases{
+        margin-bottom: 20px;
+    }
+    
+    .recursos-adicionales{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+    
+    iframe{
+        width: 95%;
+        height: 340px;
+        overflow: auto;
+    }
+}
+
+@media  screen and (min-width: 1440px){
+    .container-izq{
+        width: 60%;
+        margin: 0 40px;
+    }
+
+    .title-curso{
+        color: #419496;
+        font-size: 2.7em;
+        border-top:10px;
+        border-bottom: 10px;
+        border-bottom: 20px;
+        font-family: 'Klee One', cursive;
+    }
+    
+    .title-maestro{
+        color: white;
+        font-size: 1.2em;
+        border-top: 50px;
+    }
+    
+    .title-fase{
+        font-size: 1.5em;
+        height: 40px;
+    }
+    
+    .terminar{
+        margin-top: 50px;
+        width: 290px;
+        height: 50px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+    
+    .container-right{
+        float: right;
+        width: 350px;
+        top: -690px;
+        left: -5%;
+        position: relative;
+        text-align: left;
+    }
+    
+    video{
+        width: 100%;
+        height: 360px;
+    }
+    
+    .nombre-curso{
+        font-size: 1.2em;
+        color: #419496;
+    }
+    
+    .circle--gray{
+        background-color: #0e0d0d ;
+    }
+    
+    .curso{
+        text-decoration: none;
+    }
+    
+    .nombre-fase{
+       text-align: left;
+        text-decoration: none;
+        color: white;
+    }
+    
+    .fases{
+        margin-bottom: 20px;
+    }
+    
+    .recursos-adicionales{
+        margin-top: 50px;
+        margin-bottom: 10px;
+        font-size: 1.3em;
+    }
+    
+    iframe{
+        width: 100%;
+        height: 360px;
+        overflow: auto;
+    }
+}
+
+
